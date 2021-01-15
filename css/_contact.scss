@@ -1,0 +1,76 @@
+.contact {
+  position: relative;
+  $this: &;
+  background-color: $colorBlue;
+  border-bottom: 1px solid $colorBlue;
+  padding-bottom: (128.5/375)*100%;
+  padding-top: (59/375)*100%;
+  @media screen and(min-width: 767px) {
+    padding-bottom: (225/1280)*100%;
+    padding-top: (173/1280)*100%;
+  }
+
+  .container {
+    position: relative;
+    z-index: 100;
+    padding: 0 22px;
+    @media screen and(min-width: 767px) {
+      width: (1000/1280)*100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    #{$this}-ttl {
+        h2 {
+            margin-bottom: 14.5px;
+            @include Mon($colorYellow,3.2rem,1000);
+            font-weight: bold;
+            @media screen and(min-width: 767px) {
+              font-size: 6rem;
+            }
+        }
+        p {
+            color: $colorYellow;
+            margin-bottom: 40px;
+        }
+    }
+  
+    form {
+      #{$this}-form {
+        margin-bottom: 15px;
+        .inputs {
+          height: 60px;
+          width: (330/375)*100vw;
+          padding-left: 17px;
+          border: 1px $colorGrayFAQborder solid;
+          @media screen and(min-width: 767px) {
+            height: 70px;
+            width: (670/1280)*100vw;
+          }
+        }
+        .inputs-txt {
+          height: 250px;
+          padding: 19px 17px 0 17px;
+          width: (330/375)*100vw;
+          @media screen and(min-width: 767px) {
+            height: 304px;
+            width: (1004/1280)*100vw;
+          }
+        }
+        .btn {
+          background-color: $colorOrange;
+          height: 60px;
+          width: (330/375)*100vw;
+          border-radius: 50px;
+          font-size: 3rem;
+          border: none;
+          font-size: 2.1rem;
+          font-weight: bold;
+          @media screen and(min-width: 767px) {
+            height: 100px;
+            width: (1004/1280)*100vw;
+          }
+        }
+      }
+    }
+  }
+}//contact

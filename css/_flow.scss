@@ -1,0 +1,295 @@
+.flow {
+    background-color: $colorBlue;
+    padding: 82px 0 354px 0;
+    position: relative;
+    width: 100vw;
+    @media screen and(min-width: 767px) {
+        // width: calc((475/1280)*100vw);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    &-ttl {
+        padding-left: 22px;
+        position: relative;
+        @media screen and(min-width: 767px) {
+            padding-left: 138px;
+            margin-right: auto;
+            text-align: center;
+            padding-bottom: 60px;
+            text-align: left;
+        }
+        h2 {
+            @include Mon($colorYellow,3.2rem,1000);
+            @media screen and(min-width: 767px) {
+                font-size: 6rem;
+            }
+        }
+        p {
+        color: $colorYellow;
+        font-size: 1.4rem;
+        margin-bottom: 36px;
+        @media screen and(min-width: 767px) {
+            font-size: 2rem;
+        }
+        }
+    }
+    &-ttl::before {
+        content: '';
+        height: 240px;
+        width: 100%;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        z-index: -100;
+        background-color: $colorBlue;
+        @media screen and(min-width: 767px) {
+            width: 475px;
+        }
+    }
+    &-container {
+        padding-left: calc((20/375)*100%);
+        position: relative;
+        @media screen and(min-width: 767px) {
+            margin-left: $space;
+            padding-left: 0;
+        }
+        &__group {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            width: calc((355/375)*100%);
+            @media screen and(min-width: 767px) {
+                flex-wrap: nowrap;
+                width: (1140/1280)*100vw;
+            }
+            .step01 {
+                width: 50%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorWhite;
+                z-index: 100;
+                @media screen and(min-width: 767px) {
+                    width: (285.5/1140)*100%;
+                }
+                .steptxt {
+                    text-align: center;
+                    height: 200px;
+                    background-image: url(../svg/step01.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    margin-top: 33px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media screen and(min-width: 767px) {
+                        margin-top: 67px;
+                        margin-bottom: 60px;
+                    }
+                    p {
+                        color: $colorBlack;
+                        font-size: 2.1rem;
+                        text-align: center;
+                        z-index: 200;
+                        @media screen and(min-width: 767px) {
+                            font-size: 3.8rem;
+                        }
+                    }
+                }
+            }
+            .step02 {
+                width: 50%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorstep2;
+                z-index: 100;
+                @media screen and(min-width: 767px) {
+                    width: (285.5/1140)*100%;
+                }
+                .steptxt {
+                    text-align: center;
+                    height: 200px;
+                    background-image: url(../svg/step02.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    margin-top: 33px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    @media screen and(min-width: 767px) {
+                        margin-top: 67px;
+                        margin-bottom: 60px;
+                    }
+                    p {
+                        color: $colorBlack;
+                        font-size: 2.1rem;
+                        text-align: center;
+                        z-index: 200;
+                        @media screen and(min-width: 767px) {
+                            font-size: 3.8rem;
+                        }
+                    }
+                }
+            }
+            .step03 {
+                width: 50%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorstep3;
+                z-index: 100;
+                @media screen and(min-width: 767px) {
+                    width: (285.5/1140)*100%;
+                }
+                .steptxt {
+                    text-align: center;
+                    height: 200px;
+                    background-image: url(../svg/step03.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    margin-top: 33px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    @media screen and(min-width: 767px) {
+                        margin-top: 67px;
+                        margin-bottom: 60px;
+                    }
+                    p {
+                        color: $colorBlack;
+                        font-size: 2.1rem;
+                        text-align: center;
+                        z-index: 200;
+                        @media screen and(min-width: 767px) {
+                            font-size: 3.8rem;
+                        }
+                    }
+                    p:nth-child(2){
+                        font-size: 1.4rem;
+                        letter-spacing: 0;
+                        @media screen and(min-width: 767px) {
+                            font-size: 2.4rem;
+                        }
+                    }
+                }
+            }
+            .step04 {
+                width: 50%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorstep4;
+                z-index: 100;
+                @media screen and(min-width: 767px) {
+                    width: (285.5/1140)*100%;
+                }
+                .steptxt {
+                    text-align: center;
+                    height: 200px;
+                    background-image: url(../svg/step04.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    margin-top: 33px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media screen and(min-width: 767px) {
+                        margin-top: 67px;
+                        margin-bottom: 60px;
+                    }
+                    p {
+                        color: $colorBlack;
+                        font-size: 2.1rem;
+                        text-align: center;
+                        z-index: 200;
+                        @media screen and(min-width: 767px) {
+                            font-size: 3.8rem;
+                        }
+                    }
+                }
+            }
+        }//flow-container__group
+        &__group::before {
+            content: '';
+            height: 175px;
+            width: (1140/1280)*100vw;
+            position: absolute;
+            top: -77px;
+            left: 0;
+            z-index: -100;
+            background-color: #2A84AC;
+        }
+        .scrollLine {
+            position: absolute; 
+            top: 60px;
+            left: -40px;
+            position: absolute;
+            width: 1px;
+            height: 60px;
+            overflow: hidden;
+        }
+        .scrollLine::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 1px;
+            height: 60px;
+            background: rgb(0, 0, 0);
+            overflow: hidden;
+            animation: scroll 2.4s infinite normal;
+        }
+        .scrollLine::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 1px;
+            height: 60px;
+            background: rgba(0, 0, 0, 0.3);
+        } 
+    }//flow-container
+    &-container::before {
+        @media screen and(min-width: 767px) {
+            position: absolute;
+            content: 'FLOW';
+            @include Mon($colorBlack,.6rem,1000);
+            top: -170px;
+            left: -60px;
+            width: 30px;
+            height: 220px;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.flow::after {
+
+    @media screen and(min-width: 767px) {
+
+        position: absolute;
+        content:  '';
+        top: 62%;
+        left: 0;
+        height: 267px;
+        width: 100%;
+        background-color: $colorBlue;
+        z-index: -100;
+        width: 100vw;
+    }
+}

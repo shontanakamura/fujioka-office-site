@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import "mixin.scss";
+@import "config.scss";
+@import "fonts.scss";
+@import "general.scss";
+
+
+@import "header.scss";
+@import "main.scss";
+@import "firstView.scss";
+@import "point.scss";
+@import "point-under.scss";
+@import "service.scss";
+@import "flow.scss";
+@import "menber.scss";
+@import "FAQ.scss";
+@import "contact.scss";
+@import "company.scss";
+@import "footer.scss";
+
+
+
+.main.show {
+  opacity: 1;
+  visibility: visible;
+  background-color: $colorBlack;
+  z-index: 1000;
+
+}//main

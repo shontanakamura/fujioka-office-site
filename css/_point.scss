@@ -1,0 +1,194 @@
+.point {
+    background-color: rgba(42, 132, 172, 0.35);
+    position: relative;
+    padding-top: (64/375)*100%;
+    @media screen and(min-width: 767px) {
+      padding-top: (389.5/1280)*100%;
+    }
+
+  .container {
+    position: relative;
+
+    @media screen and(min-width: 767px) {
+      width: (1000/1280)*100%;
+      margin: 0 auto;
+    }
+    &-ttl {
+      text-align: center;
+      margin-bottom: 27px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 59.2px;
+      }
+      h2 {
+        @include Mon($colorYellow,3.2rem,1000);
+        @media screen and(min-width: 767px) {
+          font-size: 6rem;
+        }
+      }
+      p {
+        letter-spacing: 0;
+        @media screen and(min-width: 767px) {
+          font-size: 2.1rem;
+        }
+      }
+    }
+    &-group {
+      margin: 0 auto;
+      position: relative;
+      padding: 0 81px 0 74px;
+      @media screen and(min-width: 767px) {
+        margin: 0;
+        padding: 0;
+      }
+      .icon-list {
+        text-align: center;
+        @media screen and(min-width: 767px) {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 95px;
+        }
+        li:nth-child(1) {
+          margin-bottom: 95px;
+          letter-spacing: 0;
+          line-height: calc(35/20);
+          @media screen and(min-width: 767px) {
+            width: calc(100%/3);
+            font-size: 2rem;
+            margin: 0 20px;
+          }
+          
+          .point-firstTxt {
+            margin: 0 auto;
+            white-space: nowrap;
+            @media screen and(min-width: 767px) {
+              font-size: 2rem;
+            }
+          }
+          img {
+            width: 97.16px;
+            height: 97.16px;
+            margin-bottom: 20.4px;
+          }
+        }
+        
+        li:nth-child(2) {
+          margin-bottom: 95px;
+          @media screen and(min-width: 767px) {
+            margin-bottom: 0;
+            font-size: 2rem;
+            margin: 0 20px;
+          }
+          img {
+            width: 97.16px;
+            height: 97.16px;
+            margin-bottom: 20.4px;
+          }
+        }
+        li:nth-child(3) {
+          padding-bottom: 0;
+          margin-bottom: 0;
+          @media screen and(min-width: 767px) {
+            margin-bottom: 0;
+            font-size: 2rem;
+            margin: 0 20px;
+          }
+          img {
+            width: 97.16px;
+            height: 97.16px;
+            margin-bottom: 20.4px;
+          }
+        }
+      }
+    }
+  }
+}//point
+
+.point::before {
+  position: absolute;
+  content: '';
+  top: -262px;
+  left: 0;
+  height: 262px;
+  width: 100%;
+  background-color: rgba(42, 132, 172, 0.35);
+}
+
+// Go Bold area
+  .wrapper{
+    position: relative;
+    left: 0;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: scroll;
+    @media screen and(min-width: 767px) {
+      left: -14%;
+      top: -100px;
+      position: absolute;
+    }
+    .marquee-anim {
+      transition: all .3s;
+      opacity: 1;
+      display: flex;
+      white-space: nowrap;
+      animation: slide 30s linear infinite;
+      transform: translateX(100%);/*初期位置*/
+      
+      @media screen and(min-width: 767px) {
+        top: -100%;
+      }
+      .marquee-inline {
+        display: block;
+        padding-right: 40px;
+        @include Mon($colorYellow,6.4rem,1000);
+        color: rgba(42, 132, 172, 0.11);
+        text-align: center;
+        white-space: nowrap;
+        @media screen and(min-width: 767px) {
+          font-size: 20rem;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .wrapper-bottom{
+    
+    position: relative;
+    width: 100vw;
+    margin: 0 auto;
+    padding-bottom: (105/375)*100%;
+    overflow: scroll;
+    @media screen and(min-width: 767px) {
+      display: none;
+      left: 0%;
+      top: 26%;
+      position: absolute;
+      height: 300px;
+    }
+    .marquee-animBottom  {
+      transition: all .3s;
+      opacity: 1;
+      display: flex;
+      white-space: nowrap;
+      animation: slide 30s linear infinite;
+      transform: translateX(100%);/*初期位置*/
+      
+      @media screen and(min-width: 767px) {
+        top: -100%;
+      }
+      .marquee-inline {
+        display: block;
+        padding-right: 4rem;
+        @include Mon($colorYellow,6.4rem,1000);
+        color: rgba(42, 132, 172, 0.11);
+        text-align: center;
+        white-space: nowrap;
+        @media screen and(min-width: 767px) {
+          font-size: 20rem;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+

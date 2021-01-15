@@ -1,0 +1,70 @@
+$colorBlack: #0A0A0A;
+$colorYellow: #FEE757;
+$colorWhite: #FFFFFF;
+$colorGreen: #20D608;
+$colorOrange: #FECF07;
+$colorGray: #F2F2F2;
+$colorGrayf: #707070;
+$colorGrayFAQ: #F0F0F0;
+$colorGrayFAQborder: #333333;
+$colorGrayg: #4D4D4D;
+$colorstep2: #F5F5F5;
+$colorstep3: #DDDDDD;
+$colorstep4: #D0D0D0;
+$colorBlue: #2A84AC;
+
+$space:(138/1280)*100%;
+
+//go bold area
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes slide2 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+// go bold area
+
+
+//scroll area
+  @keyframes scroll {
+    0% {
+            transform: translate3d(0, -100%, 0);
+    }
+    15% {
+            transform: translate3d(0, -98%, 0);
+    }
+    85% {
+            transform: translate3d(0, 98%, 0);
+    }
+    100% {
+            transform: translate3d(0, 100%, 0);
+    }
+}
+
+@keyframes footer-scroll {
+    0% {
+            transform: translate3d(0, 100%, 0);
+    }
+    15% {
+            transform: translate3d(0, 98%, 0);
+    }
+    85% {
+            transform: translate3d(0, -98%, 0);
+    }
+    100% {
+            transform: translate3d(0, -100%, 0);
+    }
+}
+
+//scroll area
