@@ -35,8 +35,9 @@
           .menu {
             border-bottom: solid 1px $colorGrayFAQborder;
               &-item {
+                padding-left:1em;
+                text-indent:-1em;
                 &__link {
-                  
                   position: relative;
                   padding: 31.5px 0 21.5px 0;
                   width: (280/375)*100%;

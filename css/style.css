@@ -2327,6 +2327,11 @@ img {
   border-bottom: solid 1px #333333;
 }
 
+.FAQ .container .FAQ-main .menu-item {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
 .FAQ .container .FAQ-main .menu-item__link {
   position: relative;
   padding: 31.5px 0 21.5px 0;
