@@ -1,0 +1,61 @@
+.mapArea {
+  padding-bottom: 202px;
+  #map {
+    width: 100%;
+    height: 407px;
+    background-color: grey;
+    @media screen and(min-width: 767px) {
+      margin-bottom: 160.7px;
+    }
+  }
+
+  .info-txt {
+    padding: 0 32px 0 31px;
+    margin-bottom: 57px;
+    margin-top: 40px;
+    text-align: center;
+    @media screen and(min-width: 767px) {
+      margin-bottom: 50px;
+    }
+    p {
+      white-space: pre-line;
+      @media screen and(min-width: 767px) {
+        white-space: normal;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .content-btn {
+    padding: 0 29px 0 33px;
+    max-width: 520px;
+    height: 112px;
+    margin: 0 auto;
+    @media screen and(min-width: 767px) {
+      padding: 0;
+    }
+    a {
+      @include Ave($colorWhite,3.2rem,700);
+      display: block;
+      max-width: 520px;
+      height: 112px;
+      line-height: 112px;
+      text-align: center;
+      background-color: $colorborder-Blue;
+      border-radius: 100px;
+      @media screen and(min-width: 767px) {
+
+        background: -moz-linear-gradient(top left, #364D6A, #599DC0); 
+        background: -webkit-linear-gradient(top left, #364D6A, #599DC0); 
+        background: linear-gradient(to bottom right, #364D6A, #599DC0);
+      }
+    }
+  }
+
+  .background-blue {
+    background-color: $colorborder-Blue;
+    height: 10.78px;
+    margin-top: 13px;
+  }
+
+}

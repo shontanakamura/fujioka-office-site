@@ -1,0 +1,102 @@
+.news {
+  padding-bottom: 77.4px;
+  @media screen and(min-width: 767px) {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+  &-article {
+    margin-top: 31.4px;
+    padding: 0 20.6px 0 17px;
+    @media screen and(min-width: 767px) {
+      width: (643/1280)*100%;
+      padding: 87px 94px 82px 49.2px;
+      top: -96px;
+      left: 0;
+      z-index: 200;
+      background-color: $colorWhite;
+      padding-top: 87px;
+      padding-bottom: 82px;
+      margin-top: 0;
+      background-color: $colorBackground;
+    }
+    h2 {
+      margin-bottom: 8px;
+      @include Ave($colorTitle,2.4rem,700);
+      @media screen and(min-width: 767px) {
+        display: none;
+      }
+    }
+    .latest-news {
+      display: none;
+      @media screen and(min-width: 767px) {
+        display: block;
+        margin-bottom: 38px;
+        @include Ave($colorTitle,2.4rem,700);
+      }
+    }
+    .article-txt {
+      display: flex;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 21px;
+      }
+      time {
+        color: $colorGray;
+        @media screen and(min-width: 767px) {
+          font-size: 1.6rem;
+        }
+      }
+      a {
+        display: inline-block;
+        color: $colorBlack;
+        width: (199/375)*100vw;
+        margin-left: 36.8px;
+        @media screen and(min-width: 767px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .news-border {
+      background-color: $colorborder-Blue;
+      height: 10.78px;
+      margin-top: 13px;
+      @media screen and(min-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &-txt {
+    margin-top: 37px;
+    padding: 0 25.4px 0 26.3px;
+    @media screen and(min-width: 767px) {
+      position: relative;
+      z-index: 100;
+      // width: (726/1280)*100%;
+      padding: 96.8px 182.2px 66.8px 97.3px;
+      margin-top: -96px;
+      margin-right: -90px;
+      margin-bottom: 96px;
+      background: linear-gradient(to bottom, #364D6A, #599DC0);
+    }
+    h3{
+      color: $colorBlack;
+      margin-bottom: 49.8px;
+      font-size: 2.2rem;
+      @media screen and(min-width: 767px) {
+        font-size: 2.4rem;
+        line-height: 1.6;
+        color: $colorWhite
+      }
+    }
+    p{
+      color: $colorBlack;
+      @media screen and(min-width: 767px) {
+        font-size: 1.6rem;
+        line-height: 2;
+        color: $colorGrayd;
+      }
+    }
+  }
+}

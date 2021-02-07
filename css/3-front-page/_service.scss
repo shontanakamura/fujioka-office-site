@@ -1,0 +1,107 @@
+.service {
+  padding-bottom: 174px;
+  .section-ttl {
+    text-align: center;
+    margin-bottom: 32.4px;
+    text-align: center;
+    @media screen and(min-width: 767px) {
+      width: (1100/1280)*100%;
+      margin: 0 auto;
+      margin-bottom: 57px;
+      text-align: left;
+    }
+    h2 {
+      @include Ave($colorTitle,2.4rem,700);
+      @media screen and(min-width: 767px) {
+        font-size: 4.8rem;
+      }
+    }
+  }
+
+  &-container {
+    padding: 0 32px 0 27px;
+    @media screen and(min-width: 767px) {
+      padding: 0;
+      width: (1100/1280)*100%;
+      margin: 0 auto;
+    }
+    &__group {
+      @media screen and(min-width: 767px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      li {
+        margin-bottom: 57.1px;
+        text-align: center;
+        @media screen and(min-width: 767px) {
+          width: (328/1100)*100%;
+        }
+        img {
+          width: 100%;
+          max-width: 328px;
+          @media screen and(min-width: 767px) {
+            max-width: auto;
+          }
+        }
+        .img-ttl__box {
+          border: 2px solid $colorborder-Blue;
+          height: 53px;
+          text-align: center;
+          display: flex;
+          z-index: 100;
+          position: relative;
+          width: (282.34/316.07)*100%;
+          max-width: 293px;
+          margin: 0 auto;
+          margin-top: -24px;
+          margin-bottom: 27.9px;
+          span {
+            padding: 0 9.5px 0 9.8px;
+            width: (65.4/282.34)*100%;
+            background-color: $colorborder-Blue;
+            font-size: 2rem;
+            line-height: 53px;
+            color: $colorWhite;
+            
+          }
+          .img-ttl-name {
+            display: inline-block;
+            width: (216.94/282.34)*100%;
+            font-size: 2.4rem;
+            line-height: 53px;
+            background-color: $colorWhite;
+            text-align: center;
+          }
+        }
+        p {
+          width: (282.34/316.07)*100%;
+          margin: 0 auto;
+          text-align: left;
+          max-width: 293px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .link-btn {
+    padding: 0 29px 0 33px;
+    max-width: 298px;
+    margin: 0 auto;
+    @media screen and(min-width: 767px) {
+      padding: 0;
+    }
+    a {
+      display: block;
+      max-width: 298px;
+      font-size: 1.6rem;
+      color: $colorWhite;
+      height: 69px;
+      line-height: 69px;
+      max-width: 298px;
+      text-align: center;
+      background-color: $colorborder-Blue;
+      border-radius: 50px;
+    }
+  }
+}

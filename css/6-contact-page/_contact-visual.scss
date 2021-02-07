@@ -1,0 +1,20 @@
+.contact-visual {
+
+  &-top {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    background-color: $colorborder-Blue;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and(min-width: 767px) {
+      height: 287px;
+      }
+    h2 {
+      font-size: 4.8rem;
+      @include Ave($colorWhite,4.8rem,700);
+    }
+  }
+}

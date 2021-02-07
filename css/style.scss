@@ -1,30 +1,43 @@
 @charset "UTF-8";
 
-@import "mixin.scss";
-@import "config.scss";
-@import "fonts.scss";
-@import "general.scss";
+@import "1-setting/mixin.scss";
+@import "1-setting/config.scss";
+@import "1-setting/fonts.scss";
+@import "1-setting/general.scss";
+
+//layout
+@import "2-layout/header.scss";
+@import "2-layout/footer.scss";
+@import "2-layout/about-footer.scss";
+@import "2-layout/service-footer.scss";
+
+// index
+@import "3-front-page/main-visual.scss";
+@import "3-front-page/news.scss";
+@import "3-front-page/service.scss";
+@import "3-front-page/blog.scss";
+@import "3-front-page/mapArea.scss";
+
+//page-about
+@import "4-about-page/about-visual.scss";
+@import "4-about-page/suggestion.scss";
+@import "4-about-page/office-data.scss";
+
+// page-price
+@import"5-price-page/price.scss";
+@import"5-price-page/price-visual.scss";
+
+//page-service
+@import "7-service-page/service-page.scss";
+@import "7-service-page/service-visual.scss";
+
+//page-contact
+@import "6-contact-page/contact.scss";
+@import "6-contact-page/contact-visual.scss";
 
 
-@import "header.scss";
-@import "main.scss";
-@import "firstView.scss";
-@import "point.scss";
-@import "point-under.scss";
-@import "service.scss";
-@import "flow.scss";
-@import "menber.scss";
-@import "FAQ.scss";
-@import "contact.scss";
-@import "company.scss";
-@import "footer.scss";
+// single
+@import"8-single-page/blog-single.scss";
+@import"8-single-page/blog-social.scss";
 
 
-
-.main.show {
-  opacity: 1;
-  visibility: visible;
-  background-color: $colorBlack;
-  z-index: 1000;
-
-}//main

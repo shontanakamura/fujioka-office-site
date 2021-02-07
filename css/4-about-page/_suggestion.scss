@@ -1,0 +1,127 @@
+.suggestion {
+  padding: 0 40px;
+  margin-top: 40px;
+  @media screen and(min-width: 767px) {
+    padding: 0 0 114px 0;
+    margin-top: 0;
+  }
+  .support {
+    background-color: $colorBackground;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: -80px;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 30px;
+    @media screen and(min-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      width: (997/1280)*100%;
+      margin: 0 auto;
+      padding: 75px 46px 87px 114px;
+      margin-top: -200px;
+      position: relative;
+      z-index: 100;
+      margin-bottom: 88px;
+    }
+     &-ttl {
+      margin-bottom: 20px;
+      @media screen and(min-width: 767px) {
+        width: (306/997)*100%;
+      }
+      p:nth-child(1) {
+        @include Ave($colorHeader,2rem,700);
+        @media screen and(min-width: 767px) {
+          font-size: 3.6rem;
+          white-space: normal;
+          letter-spacing: 0.2075em;
+        }
+        @media screen and(min-width: 1000px) {
+          white-space: nowrap;
+        }
+      }
+      p:nth-child(2) {
+        @include Ave($colorHeader,2rem,700);
+        @media screen and(min-width: 767px) {
+          font-size: 3.6rem;
+          white-space: normal;
+          letter-spacing: 0.2075em;
+        }
+        @media screen and(min-width: 1000px) {
+          white-space: nowrap;
+        }
+      }
+    }
+  
+    &-txt {
+      font-size: 2rem;
+      @media screen and(min-width: 767px) {
+        width: 49.62487%;
+      }
+      p {
+        font-size: 2rem;
+        @media screen and(min-width: 767px) {
+          letter-spacing: (84.58/1000)*1em;
+        }
+      }
+    }
+  
+  }
+    &-ttl {
+      margin-bottom: 20px;
+      @media screen and(min-width: 767px) {
+        width: (995/1280)*100%;
+        margin: 0 auto;
+        margin-bottom: 36px;
+      }
+      h2 {
+        font-size: 2.4rem;
+        @media screen and(min-width: 767px) {
+          font-size: 2.4rem;
+        }
+      }
+    }
+    &-container {
+
+      @media screen and(min-width: 767px) {
+        width: (995/1280)*100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      &__left {
+        @media screen and(min-width: 767px) {
+          width: (470/995)*100%;
+          letter-spacing: 0.1263em;
+        }
+        p {
+          margin-bottom: 20px;
+          @media screen and(min-width: 767px) {
+            font-size: 1.4rem;
+            line-height: 2;
+          }
+        }
+      }
+
+      &__right {
+        @media screen and(min-width: 767px) {
+          width: (485.28/995)*100%;
+          letter-spacing: 0.1263em;
+        }
+        p {
+          margin-bottom: 20px;
+          @media screen and(min-width: 767px) {
+            font-size: 1.4rem;
+            line-height: 2;
+          }
+        }
+      }
+    }
+
+
+
+
+
+
+}

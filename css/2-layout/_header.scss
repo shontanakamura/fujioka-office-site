@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.header {
+
+  &-box {
+    height: 65px;
+    @media screen and(min-width: 767px) {
+      height: 111px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 102px 0 94px;
+    }
+    &__logo {
+      display: none;
+      @media screen and(min-width: 767px) {
+        display: block;
+        line-height: 111px;
+      }
+      h1 {
+        font-size: 1.2rem;
+      }
+    }
+    &__nav {
+      display: none;
+      @media screen and(min-width: 767px) {
+        display: block;
+        line-height: 111px;
+      }
+      .nav-list {
+        display: flex;
+        li + li {
+          margin-left: 52px;
+        }
+        a {
+          color: $colorBlack;
+          @include Ave($colorHeader,1.6rem,700);
+        }
+      }
+    }
+  }
+}
